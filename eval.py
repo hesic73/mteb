@@ -13,6 +13,8 @@ ZH_TASKS = [
     "TNEWS",
     "AmazonReviewsClassification",
     "PAWS_X",
+    "BQ",
+    "LCQMC",
 ]
 
 
