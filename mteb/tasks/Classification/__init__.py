@@ -10,3 +10,4 @@ from .MTOPDomainClassification import *
 from .MTOPIntentClassification import *
 from .ToxicConversationsClassification import *
 from .TweetSentimentExtractionClassification import *
+from .ClueClassification import *

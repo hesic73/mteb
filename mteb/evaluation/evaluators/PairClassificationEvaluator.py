@@ -37,14 +37,22 @@ class PairClassificationEvaluator(Evaluator):
             labels = labels[:limit]
         self.sentences1 = sentences1
         self.sentences2 = sentences2
+        
         self.labels = labels
         self.batch_size = batch_size
 
         assert len(self.sentences1) == len(self.sentences2)
         assert len(self.sentences1) == len(self.labels)
+        
         for label in labels:
-            assert label == 0 or label == 1
-
+            try:
+                assert label == 0 or label == 1
+                
+            except Exception as e:
+                print(label,type(label))
+                raise e
+            
+            
     def __call__(self, model):
         scores = self.compute_metrics(model)
 
