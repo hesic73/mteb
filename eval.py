@@ -10,7 +10,9 @@ import argparse
 
 
 ZH_TASKS = [
-    "TNEWS"
+    "TNEWS",
+    "AmazonReviewsClassification",
+    "PAWS_X",
 ]
 
 
