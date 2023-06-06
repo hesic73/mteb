@@ -15,6 +15,7 @@ ZH_TASKS = [
     "PAWS_X",
     "BQ",
     "LCQMC",
+    "T2RANKING"
 ]
 
 

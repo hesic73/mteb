@@ -151,6 +151,7 @@ class DRESModel:
         return self.model.stop_multi_process_pool(pool)
 
     def encode_queries(self, queries: List[str], batch_size: int, **kwargs):
+        print(queries[0])
         return self.model.encode(queries, batch_size=batch_size, **kwargs)
 
     def encode_corpus(self, corpus: List[Dict[str, str]], batch_size: int, **kwargs):
